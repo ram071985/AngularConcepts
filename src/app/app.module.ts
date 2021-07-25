@@ -5,9 +5,10 @@ import { AuthComponent } from './auth/auth.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ServersComponent } from './servers/servers.component';
 
 @NgModule({
-  declarations: [ChatAppComponent, AuthComponent],
+  declarations: [ChatAppComponent, AuthComponent, ServersComponent],
   imports: [BrowserModule, NgbModule, FormsModule, HttpClientModule],
   providers:[],
   bootstrap: [ChatAppComponent],
