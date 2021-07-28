@@ -9,9 +9,11 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { ServerComponent } from './server/server.component';
+import { ClickComponent } from './click/click.component';
+import { ClicksComponent } from './clicks/clicks.component';
 
 @NgModule({
-  declarations: [ChatAppComponent, AuthComponent, ServersComponent, WarningAlertComponent, SuccessAlertComponent, ServerComponent],
+  declarations: [ChatAppComponent, AuthComponent, ServersComponent, WarningAlertComponent, SuccessAlertComponent, ServerComponent, ClickComponent, ClicksComponent],
   imports: [BrowserModule, NgbModule, FormsModule, HttpClientModule],
   providers:[],
   bootstrap: [ChatAppComponent],
