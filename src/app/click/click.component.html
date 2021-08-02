@@ -1,5 +1,9 @@
-<button (click)="showParagraph = !showParagraph">Display Details</button>
+<!-- <button (click)="showParagraph = !showParagraph">Display Details</button> -->
+<button (click)="onParagraphToggle()">Display Details</button>
 <p *ngIf="showParagraph">I think I'm liking Angular more than React!</p>
-<ul *ngFor="let click of buttonClicks">
-  <li [ngStyle]="{ backgroundColor: getColor }">{{ click }}</li>
-</ul>
+<div
+  *ngFor="let click of buttonClicks"
+  [ngStyle]="{ backgroundColor: click >= 5 ? 'blue' : 'transparent' }"
+>
+  {{ click }}
+</div>
