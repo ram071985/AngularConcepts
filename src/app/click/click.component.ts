@@ -16,23 +16,7 @@ export class ClickComponent implements OnInit {
   ngOnInit(): void {}
 
   onParagraphToggle() {
-    this.count += 1;
-    this.buttonClicks.push(this.count);
-    console.log(this.buttonClicks);
-    if (!this.showParagraph) {
-      return (this.showParagraph = true);
-    }
-    return (this.showParagraph = false);
-  }
-
-  getColor() {
-    for (let i = 0; i < this.buttonClicks.length; i++) {
-      if(this.buttonClicks[i] > 4)
-      {
-        return 'blue';
-      }
-    }
-    return null;
-
+    this.showParagraph = !this.showParagraph;
+    this.buttonClicks.push(new Date());
   }
 }
